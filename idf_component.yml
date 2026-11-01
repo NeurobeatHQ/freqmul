@@ -1,0 +1,4 @@
+version: "0.1.0"
+description: "Move low-frequency signals (about 1-40 Hz) into the audio range in real time: SSB shift, delay-line pitch shift, spectral oscillator bank, polyphase interpolator."
+dependencies:
+  idf: ">=4.4"

@@ -1,0 +1,30 @@
+# macOS and editors
+.DS_Store
+._*
+.vscode/
+.idea/
+*.swp
+*~
+
+# desktop test suite (binary and generated demo audio)
+extras/host_test/host_test
+extras/host_test/*.dSYM/
+extras/host_test/out/
+
+# CMake and ESP-IDF builds
+build/
+cmake-build-*/
+extras/idf_example/sdkconfig
+extras/idf_example/sdkconfig.old
+extras/idf_example/managed_components/
+extras/idf_example/dependencies.lock
+
+# PlatformIO
+.pio/
+
+# compiled objects and images
+*.o
+*.a
+*.elf
+*.bin
+*.map

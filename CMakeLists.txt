@@ -1,0 +1,10 @@
+# FreqMul as an ESP-IDF component, or as a plain CMake library elsewhere (the Arduino IDE ignores this file).
+if(ESP_PLATFORM)
+  idf_component_register(SRCS "src/FreqMul.cpp" INCLUDE_DIRS "src")
+else()
+  cmake_minimum_required(VERSION 3.16)
+  project(FreqMul CXX)
+  add_library(FreqMul STATIC src/FreqMul.cpp)
+  target_include_directories(FreqMul PUBLIC src)
+  target_compile_features(FreqMul PUBLIC cxx_std_11)
+endif()
